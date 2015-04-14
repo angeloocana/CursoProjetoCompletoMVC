@@ -165,9 +165,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\Startup.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -207,6 +205,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +214,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TutorialEcommerce.App\TutorialEcommerce.App.csproj">
+      <Project>{d9d789cd-8482-428a-9b59-4cb3e74049c6}</Project>
+      <Name>TutorialEcommerce.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TutorialEcommerce.Domain\TutorialEcommerce.Domain.csproj">
+      <Project>{251556f0-feff-4e91-b93c-8bb9e5bf4b5d}</Project>
+      <Name>TutorialEcommerce.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TutorialEcommerce.Helpers\TutorialEcommerce.Helpers.csproj">
+      <Project>{30f72fb4-2d5d-4ae7-897a-664da80a2f00}</Project>
+      <Name>TutorialEcommerce.Helpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
